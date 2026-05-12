@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="55dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Secure Student Vault"
+            android:textColor="#E91E63"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your data, your control, your future."
+            android:textColor="#777777"
+            android:textSize="15sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="28dp" />
+
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Student name"
+            android:textColor="#222222"
+            android:textColorHint="#999999"
+            android:background="@drawable/pink_input_bg"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp" />
+
+        <Spinner
+            android:id="@+id/spLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pink_input_bg"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/pink_input_bg"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dark mode"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/swDarkMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etToken"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:hint="Secure token"
+            android:inputType="textPassword"
+            android:textColor="#222222"
+            android:textColorHint="#999999"
+            android:background="@drawable/pink_input_bg"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp" />
+
+        <Button
+            android:id="@+id/btnSavePrefs"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="22dp"
+            android:text="Save Preferences"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/pink_button_bg"
+            android:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnLoadPrefs"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:text="Load Preferences"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/pink_button_bg"
+            android:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnSaveJson"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:text="Save Modules JSON"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/pink_button_bg"
+            android:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnLoadJson"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:text="Load Modules JSON"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/pink_button_bg"
+            android:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnExport"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:text="Export Report"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/pink_button_bg"
+            android:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:text="Clear All"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/pink_button_bg"
+            android:backgroundTint="@null"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:layout_marginTop="24dp"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:background="@drawable/pink_result_bg"
+            android:padding="18dp" />
+
+    </LinearLayout>
+
+</ScrollView>
